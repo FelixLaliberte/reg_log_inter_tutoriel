@@ -21,22 +21,14 @@ $logit(P) = ln(\frac{P}{1-P}) = {\beta_0}\:+\:({\beta_1}^*{x_1})\:+\:...\:+\:({\
 Les *packages* et la base de données utilisés lors de ce tutoriel sont les suivants :
 
 ```{R, message=FALSE, warning=FALSE}
-library(tidyverse)
-library(ggpubr)
 library(ggplot2)
-library(psych)
-library(car)
-library(foreign)
-library(descr)
-library(readr)
-library(RCurl)
 library(sjPlot)
-library(knitr)
-library(dplyr)
+library(magrittr)
 ```
 
 ```{R}
-basededonnees <- read.csv(text=getURL("https://raw.githubusercontent.com/Labo-Lacourse/tuto-reg-logistique-interactions/main/reglog.csv"))
+URL <- "https://raw.githubusercontent.com/Labo-Lacourse/tuto-reg-logistique-interactions/main/reglog.csv"
+basededonnees <- read.csv(URL)
 ```
 
 \
