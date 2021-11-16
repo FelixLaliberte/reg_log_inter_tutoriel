@@ -847,10 +847,4 @@ UCLA : Statistical Consulting Group (s. d.). *FAQ: How do I interpret odds ratio
 Zablotski, Y. (2019). *Logistic regression 5: Multiple logistic regression with interactions*. Dr. Yury Zablotski. https://yury-zablotski.netlify.app/post/multiple-logistic-regression-with-interactions/#one-numeric-and-one-categorical-predictors%20
 
 
-
-
-
-
-
-
 \
