@@ -848,6 +848,3 @@ UCLA : Statistical Consulting Group (s. d.). *Deciphering interactions in logist
 UCLA : Statistical Consulting Group (s. d.). *FAQ: How do I interpret odds ratios in logistic regression?* https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/
 
 Zablotski, Y. (2019). *Logistic regression 5: Multiple logistic regression with interactions*. Dr. Yury Zablotski. https://yury-zablotski.netlify.app/post/multiple-logistic-regression-with-interactions/#one-numeric-and-one-categorical-predictors%20
-
-
-\
