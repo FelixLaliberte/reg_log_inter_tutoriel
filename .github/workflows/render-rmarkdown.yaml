@@ -24,16 +24,16 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v1
         with:
           cache-version: 2
+# Add packages needed to run your tutorial
           extra-packages: |
-          # Add packages needed to run your tutorial
             ggplot2
             sjPlot
             magrittr
             
       - name: Render Rmarkdown files
+# will work only with one file, given they'd all be renamed to index.html.
         run: |
           RMD_PATH=($(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '[.]Rmd$'))
-          # will work only with one file, given they'd all be renamed to index.html.
           Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f, output_file = 'index.html')' ${RMD_PATH[*]}
 
       - name: Commit results
