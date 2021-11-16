@@ -1,6 +1,9 @@
 ---
 title: "Analyser l'effet d'interaction dans la régression logistique"
-output: html_document
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 
@@ -21,22 +24,14 @@ $logit(P) = ln(\frac{P}{1-P}) = {\beta_0}\:+\:({\beta_1}^*{x_1})\:+\:...\:+\:({\
 Les *packages* et la base de données utilisés lors de ce tutoriel sont les suivants :
 
 ```{R, message=FALSE, warning=FALSE}
-library(tidyverse)
-library(ggpubr)
 library(ggplot2)
-library(psych)
-library(car)
-library(foreign)
-library(descr)
-library(readr)
-library(RCurl)
 library(sjPlot)
-library(knitr)
-library(dplyr)
+library(magrittr)
 ```
 
 ```{R}
-basededonnees <- read.csv(text=getURL("https://raw.githubusercontent.com/Labo-Lacourse/tuto-reg-logistique-interactions/main/reglog.csv"))
+URL <- "https://raw.githubusercontent.com/Labo-Lacourse/tuto-reg-logistique-interactions/main/reglog.csv"
+basededonnees <- read.csv(URL)
 ```
 
 \
@@ -853,12 +848,3 @@ UCLA : Statistical Consulting Group (s. d.). *Deciphering interactions in logist
 UCLA : Statistical Consulting Group (s. d.). *FAQ: How do I interpret odds ratios in logistic regression?* https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/
 
 Zablotski, Y. (2019). *Logistic regression 5: Multiple logistic regression with interactions*. Dr. Yury Zablotski. https://yury-zablotski.netlify.app/post/multiple-logistic-regression-with-interactions/#one-numeric-and-one-categorical-predictors%20
-
-
-
-
-
-
-
-
-\
